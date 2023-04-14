@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Rabbit</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"><img src="images/logoCrop.jpg"></a>
+                <p id="siteName"><em>Computer Rabbit</em></p>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul id="nav"class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="BenchmarkPage.html">Benchmarks</a>
+                        <ul class="navbar-nav">
+                            <li ><a href="GPUBench.html">GPUs »</a>
+                                <ul>
+                                    <li><a href="NvidBench.html">NVIDIA</a>
+                                    <li><a href="AmdGBench.html">AMD</a>
+                                </ul>
+                                </li>
+                            
+                            <li>
+                                <li><a href="CPUBench.html">CPUs »</a>                                
+                                    <ul id="subnav">
+                                    <li><a href="IntelBench.html">Intel</a>
+                                    <li><a href="AmdCBench.html">AMD</a>
+                                </ul>
+                                </li>
+                        </ul>
+                        </li>
+                        <li><a href="NewsPage.html">News</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="Newsletter.html">Sign Up For Our Newsletter!</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+            </nav>
+<!--END OF NAVIGATION BAR-->
+    <div class="col-sm-4  text-center">
+        <h2>Lastest Benchmarks and News</h2>
+    </div>
+</div>
+<div class="card">
+    <a href="rtx4070.html"><img src="images/rtx4070.jpg">
+    </a>
+</div>
+<div class="container">
+    <a href="rtx4070.html" alt="rtx 4070 graphics card ">The brand new RTX 4070 from Nvidia has just been released! Click to see our findings.</a>
+</div>
+<br>
+<div class="card">
+    <a href="Maintainance.html"><img src="images/R77800x3d.png">
+    </a>
+</div>
+<div class="container">
+    <a href="Maintainance.html">The brand New Ryzen 7 7800X3D CPU has released from AMD. Check out our full review!</a>
+</div>
+<br>
+<div class="card">
+    <a href="Maintainance.html"><img src="images/amdGpu.jpg">
+    </a>
+</div>
+<div class="container">
+    <a href="Maintainance.html">Leaks from the new amd GPUs have started to come out. Check out what has been leaked so far.</a>
+</div>
+
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Isfar Ehsan, 2023 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+
+var nav = document.getElementById('navbar-toggler'),
+    body = document.body;
+
+nav.addEventListener('click', function(e) {
+    body.className = body.className? '' : 'with_nav';
+    e.preventDefault();
+});
+</script>
+
+</body>
+</html>

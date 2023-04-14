@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Rabbit</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+<div class="container-fluid">
+    <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html"><img src="images/logoCrop.jpg"></a>
+                <p id="siteName"><em>Computer Rabbit</em></p>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul id="nav"class="navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="BenchmarkPage.html">Benchmarks</a>
+                        <ul class="navbar-nav">
+                            <li ><a href="GPUBench.html">GPUs »</a>
+                                <ul>
+                                    <li><a href="NvidBench.html">NVIDIA</a>
+                                    <li><a href="AmdGBench.html">AMD</a>
+                                </ul>
+                                </li>
+                            
+                            <li>
+                                <li><a href="CPUBench.html">CPUs »</a>                                <ul id="subnav">
+                                    
+                                    <li><a href="IntelBench.html">Intel</a>
+                                    <li><a href="AmdCBench.html">AMD</a>
+                                </ul>
+                                </li>
+                        </ul>
+                        </li>
+                        <li><a href="NewsPage.html">News</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="Newsletter.html">Sign Up For Our Newsletter!</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+            </nav>
+<!--END OF NAVIGATION BAR-->
+<h2 id="newstitle">Sign Up For Our Newsletter</h2>
+        <div class="container" id="cform">
+          <div class="row">
+            <form action="">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname"
+                           placeholder="First name" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname"
+                           placeholder="Last name" name="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email"
+                           placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="phoneNumber" class="form-control" id="phoneNumber"
+                           placeholder="Enter Phone Number" name="phoneNumber" type="tel">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input"
+                               type="checkbox" name="promo"> I Would Like To Recieve Promotional Information Emails
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary"id="submitButton">Submit</button>
+            </form>
+        </row>
+</div>
+        </div>
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>
